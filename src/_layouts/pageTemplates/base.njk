@@ -1,0 +1,51 @@
+---
+siteTitle: Your Site Title Here
+
+---
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{siteTitle}}: {{title}}</title>
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+  
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+    </head>
+  <body class="{{pageClass}}">
+    <header class="site-header">
+      {% include "navigation.njk" %}<!-- Add your nav element to the _includes/navigation.njk file -->
+    </header>
+  
+    <main class="main page-content">
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+      <!-- Add your footer content here -->
+    </footer>
+  
+    <!-- Load CDN version of jQuery. For other versions visit this page: https://code.jquery.com/jquery/ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--    Load Local version if CDN is not working-->
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-3.7.1.min.js"><\/script>')</script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
