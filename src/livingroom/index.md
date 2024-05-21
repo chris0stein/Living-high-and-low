@@ -3,10 +3,17 @@ layout: base
 title: Chris Pages with the "Living Room" Tag
 ---
 
-<h1>Pages Tagged with "livingroom"</h1>
+<h1>Living Rooms</h1>
 
-<ul>
+<div class="family-grid">
   {% for page in collections.livingroom %}
-    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-  {% endfor %}
-</ul>
+  <div class="family-image">
+    <a href="{{page.url}}">
+      <figure>
+          <img src="/images/{{page.data.livingroom}}" alt="{{livingroomAlt}}">
+          <figcaption><a href="{{page.data.creditLink}}">{{page.data.credit}}</a></figcaption>
+      </figure>
+    </a>
+</div>
+{% endfor %}
+</div>
