@@ -7,17 +7,26 @@ tags:
   - welcome
   - info
 ---
-<h2 class="mainHeading">Main Content</h2>
+<h2 class="mainHeading">Pricing Introduction</h2>
 <section class="content">
-  <p>Add your own content. You can delete all of the content on this page after the front-matter.</p>
+  <p>Welcome to the pricing value demostration of statistics across the world in bed and living room housing.</p>
 </section>
 
-## Other instructions
-
-You can write in either markdown OR HTML and can even mix them both together on the same page
-
-Later you will also see that you can put nunjucks code in these files too.
-
-You will create a .md file here for each .html file you would have made in a normal siet.
-
-Don't forget the front matter!
+<section class="grid-container">
+            <div class="card">
+                <div class="grid-item">
+                
+                    <img src="https://th.bing.com/th/id/OIP.5kZrSnYf7WXUrljwB8kVGQHaGO?rs=1&pid=ImgDetMain" alt="StandardBed" class="card-image">
+                <h2>Bed - Pricing</h2>
+                <p>Income Ranges Across: $500 to $4,000 per month | A families living conditions can be determined based on the beds they rest on and the standard accumulated earned overall income.</p>
+                
+            </div>
+            </div>
+            <div class="grid-item">
+                <img src="https://th.bing.com/th/id/OIP.Kd8Eg0z8iliSqAuBexZv4QHaFD?rs=1&pid=ImgDetMain" alt="StandardLivingRoom" class="card-image">
+                <h2>Living Room - Pricing</h2>
+                <p>Income Ranges Across: $500 to $4,000 per month | A families living conditions can be determined based on the living rooms they rest on and the standard accumulated earned overall income.</p>
+                
+            </div>
+            
+        </div>
