@@ -1,0 +1,49 @@
+img, video{
+    max-width: 100%;
+    height: auto;
+}
+.family{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.family-info{
+    display: grid;
+    gap: 15px;
+    /* max-width: 650px; */
+    /* margin: auto; */
+}
+.family-image img{
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.family-image figure{
+    margin: 0;
+    position: relative;
+}
+.family-image figcaption{
+    background: rgba(255,255,255,.6);
+    padding: 5px;
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+}
+@media (min-width: 650px) {
+    .family-info{
+        grid-template-columns: 150px 1fr;
+        gap: 25px;
+    }
+    .family-info h2{
+        grid-column: 1/-1;
+        border-bottom: 1px solid #333;
+        margin-bottom: 0;
+    }
+}
+
+.similarFamilies{
+    display: flex;
+}
+
+.similarFamilies .family{
+    width: 150px;
+}
