@@ -15,7 +15,7 @@ tags:
         <section class="grid-container">
             <div class="grid-item">
                 <div class="card">
-                    <img src="src/images/PatMan.jpeg" alt="PM" class="card-image">
+                    <img src="/images/PatMan.jpeg" alt="PM" class="card-image">
                 <h2>Patrick Mannix</h2>
                 <p>A senior student at BMCC showing off information.</p>
                 
