@@ -1,0 +1,133 @@
+
+/* =========================
+  NAVIGATION STYLING
+  =========================  */
+  .site-title {
+    /* you may change this styling to fit your site*/
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+  
+  .site-nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem; /* adds space between logo and nav items if the items wrap under the logo */
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: #eaeaea;
+    transition: top 500ms ease-in-out;
+  }
+  
+  .site-nav a {
+    color: #0f0f0f;
+    text-decoration: none;
+    font-size:1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+  
+  .site-nav.scroll-up,
+  .site-nav:focus-within {
+    top: 0;
+  }
+  
+  .site-nav.scroll-down {
+    top: -100%;
+  }
+  
+  .links{
+  /*   display: none; */
+    max-height: 0;
+    flex-basis: 100%;
+    text-align: right;
+  /*   these are needed for when showing nav from hamburger state */
+    -webkit-transition: max-height .5s; 
+    -moz-transition: max-height .5s; 
+    -ms-transition: max-height .5s; 
+    -o-transition: max-height .5s; 
+    transition: max-height .5s;  
+    overflow: hidden;
+  }
+  /* show the nav when active class is applied */
+  .links.active{
+    display: block;
+    max-height: 100vh;
+  }
+  .links a{
+    display: block;
+    line-height: 1rem;
+    margin: 2rem 0;
+  }
+  .links a:hover{
+    border-bottom: 2px solid #0f0f0f;
+  }
+  
+  
+  
+  
+  /* BREAKPOINT =============================================
+  This is the breakpoint where the nav changes from hamburger icon to full menu. Change 600px to adjust the breakpoint. */
+  @media screen and (min-width:730px){
+    .hamburger{
+      display: none;
+    }
+    .links {
+      display: flex;
+      flex-basis: auto;
+      height: auto;
+      max-height: 100vh;
+      margin: 0 -1em;
+    }
+  
+    .links a {
+      display: inline-block;
+      margin: 0 1em;
+    }
+  }
+  
+  
+  /* CSS Hamburger Icon ======================================
+  thanks to Elijah Manor */
+  .hamburger{
+    padding-right: 1rem;
+    position: relative;
+  }
+  .hamburger span, 
+  .hamburger span:before,
+  .hamburger span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #000; /*color of hamburger icon */
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  .hamburger span{
+    top:5px;
+  }
+  .hamburger span:before {
+    top: -10px;
+  }
+  .hamburger span:after {
+    bottom: -10px;
+  }
+  
+  
+  /* =========================
+    GENERAL STYLING
+    =========================  */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;
+  }
+  main{
+    margin: 1rem;
+  }
