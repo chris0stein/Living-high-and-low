@@ -1,0 +1,40 @@
+---
+title: family page
+layout: base
+---
+ {{ content | safe }}
+
+ <div class="family">
+    <div class="family-image">
+        <figure>
+            <img src="/images/{{livingroom}}" alt="{{livingroomAlt}}">
+            <figcaption><a href="{{creditLink}}">{{credit}}</a></figcaption>
+        </figure>
+    </div>
+    <div class="family-info">
+        <h2>Family Info</h2>
+        <div>
+            <p class="income">Income: {{income}}</p>
+            <p class="country">Country: {{country}}</p>
+        </div>
+        <div class="family-image">
+            <figure>
+                <img src="/images/{{image}}" alt="{{imageAlt}}">
+                <figcaption><a href="{{creditLink}}">{{credit}}</a></figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+ <h3>Other families with {{incomeLevel}} income level</h3>
+ <div class="similarFamilies">
+    {%- for post in collections.livingroom %}
+    {% if incomeLevel === post.data.incomeLevel %}
+    <div class="family">
+        <a href="{{ post.url }}">
+            <img src="/images/{{post.data.livingroom}}" alt="{{post.data.livingroomAlt}}">
+        </a>
+    </div>
+    {% endif %}
+    {%- endfor %}
+ </div>
