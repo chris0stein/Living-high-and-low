@@ -15,14 +15,14 @@ tags:
         <section class="grid-container">
             <div class="grid-item">
                 <div class="card">
-                    <img src="src/images/PatMan.jpeg" alt="PM" class="card-image">
+                    <img src="/images/PatMan.jpeg" alt="PM" class="card-image">
                 <h2>Patrick Mannix</h2>
                 <p>A senior student at BMCC showing off information.</p>
                 
             </div>
             </div>
             <div class="grid-item">
-                <img src="image.jpg" alt="CS" class="card-image">
+                <img src="/images/chris-stein-headshot-500x500.jpg" alt="Chris stein headshot" class="card-image">
                 <h2>Christopher Stein</h2>
                 <p>A professor that aided me in creating this statistic income focused website.</p>
             </div>
