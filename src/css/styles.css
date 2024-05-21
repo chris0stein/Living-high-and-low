@@ -1,1 +1,16 @@
 /* You can add your CUSTOM CSS HERE */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
